@@ -1,6 +1,6 @@
 {
-  "name": "editson",
-  "version": "1.0.0",
+  "name": "immutable-richtext",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
