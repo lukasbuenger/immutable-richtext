@@ -19,11 +19,14 @@ const copyRange = R.curry(([start, end], text) =>
   text.substring(start, end)
 )
 
-const insertAfterRange = R.curry(
-  (newText, [start, end], text) =>
-    text
-      .substring(0, end)
-      .concat(newText, text.substring(end))
+const insertAfterRange = R.curry((
+  newText,
+  [start, end], // eslint-disable-line
+  text
+) =>
+  text
+    .substring(0, end)
+    .concat(newText, text.substring(end))
 )
 
 const append = R.curry((textB, textA) =>
